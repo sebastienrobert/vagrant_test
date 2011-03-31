@@ -1,0 +1,4 @@
+<VirtualHost *:80>
+    DocumentRoot <%= @node[:vagrant][:config][:vm][:shared_folders]["ekoform-dev"][:guestpath] %>/web
+    SetEnv axAppConfigFile '<%= @node[:vagrant][:directory] %>/appConfig.json'
+</VirtualHost>

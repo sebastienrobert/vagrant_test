@@ -1,0 +1,21 @@
+{
+    "env":"DEV",
+    "docserver":{
+        "-local-url":"http:\/\/localhost\/~daniel\/docserver-app-1.0-SNAPSHOT.phar.tar.gz.php\/index.php",
+        "url":"http:\/\/ci-docserver.axialdev.net\/index.php",
+        "clients":{
+            "quests":{
+                "account":"questuser",
+                "passwd":"questsekret",
+                "dbName":"forms_ci",
+                "collectionName":"quests"
+            },
+            "users":{
+                "account":"questuser",
+                "passwd":"questsekret",
+                "dbName":"forms_ci",
+                "collectionName":"users"
+            }
+        }
+    }
+}
