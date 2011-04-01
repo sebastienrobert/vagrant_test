@@ -1,8 +1,8 @@
 {
     "env":"DEV",
     "docserver":{
-        "-local-url":"http:\/\/localhost\/~daniel\/docserver-app-1.0-SNAPSHOT.phar.tar.gz.php\/index.php",
-        "url":"http:\/\/ci-docserver.axialdev.net\/index.php",
+        "url":"http:\/\/localhost:81\/index.php",
+        "NOT-ci-url":"http:\/\/ci-docserver.axialdev.net\/index.php",
         "clients":{
             "quests":{
                 "account":"questuser",

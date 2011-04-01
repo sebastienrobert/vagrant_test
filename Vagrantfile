@@ -7,6 +7,7 @@ Vagrant::Config.run do |config|
   # config.vm.boot_mode = :gui
   # config.vm.network "33.33.33.10"
   config.vm.forward_port "http", 80, 8080
+  config.vm.forward_port "httpdoc", 81, 8081
   # config.vm.share_folder "v-data", "/vagrant_data", "../data"
   config.vm.share_folder("ekoform-dev", "/ekoform-dev", "/Users/daniel/Documents/NetBeansProjects/Ekoform")
 
