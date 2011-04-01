@@ -32,7 +32,7 @@ end
 end
 
 execute "mongo-copy-forms-ci" do
-  command %q(mongo --eval 'db.copyDatabase("forms_ci", "forms_ci", "ci.axialdev.net");')
+  command %q(mongo --eval 'db.copyDatabase("forms_ci", "forms_dev", "ci.axialdev.net");')
   action :run                                                                                                                                                
   #action :nothing
 end
