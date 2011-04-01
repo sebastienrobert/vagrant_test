@@ -31,14 +31,14 @@ end
   package a_package
 end
 
-execute "mongo-copy-forms-ci" do
+execute "mongo-copy-forms-ci-to-dev" do
   command %q(mongo --eval 'db.copyDatabase("forms_ci", "forms_dev", "ci.axialdev.net");')
   action :run                                                                                                                                                
   #action :nothing
 end
 
 execute "mongo-count-quests" do
-  command %q(mongo --eval 'db.quests.count()' forms_ci)
+  command %q(mongo --eval 'db.quests.count()' forms_dev)
   #  action :run                                                                                                                                                
   action :nothing
 end
