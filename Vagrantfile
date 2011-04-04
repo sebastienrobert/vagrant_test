@@ -9,7 +9,7 @@ Vagrant::Config.run do |config|
   config.vm.forward_port "http", 80, 8080
   config.vm.forward_port "httpdoc", 81, 8081
   # config.vm.share_folder "v-data", "/vagrant_data", "../data"
-  config.vm.share_folder("ekoform-dev", "/ekoform-dev", "/Users/daniel/Documents/NetBeansProjects/Ekoform")
+  config.vm.share_folder("ekoform-dev", "/ekoform-dev", "C:\\Users\\Sebastien Giroux\\Documents\\NetBeansProjects\\Ekoform")
 
   # Enable and configure the chef solo provisioner
   config.vm.provision :chef_solo do |chef|
